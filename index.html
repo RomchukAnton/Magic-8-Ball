@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/popup-style.css">
+    <link rel="stylesheet" href="./resources/css/language-style.css">
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+
+        <select class="lang_select" id="language-select">
+            <option value="en">En</option>
+            <option value="ru">Ru</option>
+            <option value="de">De</option>
+            <option value="lv">Lv</option>
+        </select>
+
+        <div class="popup_btn" onclick="togglePopup()">?</div>
+
+    </header>
+
+    <!--PopUp Section-->
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1 id="popup_header">Mystic Oracle</h1>
+            <p id="popup_p1">Pose your question and tap the mystical sphere to reveal its cryptic answer. The Mystic
+                Oracle awaits your inquiry.</p>
+            <p id="popup_p2">For utmost accuracy, focus your thoughts and let the cosmic energies guide your query.</p>
+            <p id="popup_fact">Did you know? The original Magic 8 Ball was invented in the 1950s and gained fame as a
+                fortune-telling toy. Its cryptic
+                answers have baffled and amused seekers of wisdom for decades. Now, you hold the digital version in your
+                hands—ready to
+                unveil the secrets of the cosmos!🌌✨</p>
+        </div>
+    </div>
+
+
+    <!--Hero Section-->
+    <div class="body_content">
+
+        <div class="magicball_outer" id="mb-container">
+            <div class="magicball_inner">
+                <h3 class="magicball_response" id="response">8</h3>
+            </div>
+            <div class="magicball_spotlight"></div>
+            <div class="magicball_bg_shadow"></div>
+            <div class="magicball_upper_shadow"></div>
+        </div>
+
+    </div>
+
+
+    <!--Scripts Section-->
+    <script src="./resources/scripts/app.js"></script>
+    <script src="./resources/scripts/popup.js"></script>
+    <script src="./resources/scripts/language.js"></script>
+
+</body>
+
+</html>

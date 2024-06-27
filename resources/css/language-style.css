@@ -1,0 +1,6 @@
+select {
+    width: 40px;
+    height: 40px;
+    appearance: none;
+    border-radius: 50%;
+}
